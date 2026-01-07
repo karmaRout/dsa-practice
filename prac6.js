@@ -46,6 +46,24 @@ const result2 = result.filter((char, index) => str.indexOf(char) == index);
 const result3 = result2.join('')
 //console.log(result3)
 
+//Find the total number of words in a sentence.
+//console.log(str.split(' ').length)
+
+//Find the most frequent character.
+const str1 = "Hello imprintppnext";
+const obj = {};
+for(let char of str1){
+    obj[char] = (obj[char] || 0) + 1
+}
+
+const result1 = Object.entries(obj).reduce((acc,item)=>{
+    console.log(acc[0],"++",item[1])
+    return item[1] > acc[1] ? item : acc;
+})
+
+//console.log(result1)
+
+
 
 
 
