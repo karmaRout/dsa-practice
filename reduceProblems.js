@@ -65,4 +65,16 @@ const flatternArray = (arr) =>{
     },[])
 }
 
-console.log(flatternArray(arr4))
+//console.log(flatternArray(arr4))
+
+/////////////////////////////////Calculate total price from a shopping cart array/////////////////////////////////////////////
+const cart = [
+  { id: 1, name: "Shirt", price: 500, qty: 2 },
+  { id: 2, name: "Jeans", price: 1200, qty: 1 },
+  { id: 3, name: "Shoes", price: 2500, qty: 1 }
+];
+
+const totalPrice = cart.reduce((acc, item)=>{
+    return acc + item.price
+},0)
+console.log(totalPrice);
