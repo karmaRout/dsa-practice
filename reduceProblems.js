@@ -15,4 +15,13 @@ const arr1 = [1,2,10,5,45,23,12]
 const result1 = arr1.reduce((acc, item)=>{
     return acc > item ? acc : item
 },arr1[0]) 
-console.log(result1)
+//console.log(result1)
+
+///////////////////////////Count how many times each number appears in an array.//////////////////////////////////
+const arr2 = [78,4,33,12,78,45,33,57,21,87,36,23];
+
+const result2 = arr2.reduce((acc, item)=>{
+    acc[item] = (acc[item] || 0) + 1;
+    return acc
+},{})
+console.log(result2)
