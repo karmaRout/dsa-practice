@@ -52,3 +52,17 @@ const result5 = tempArr1.reduce((acc,char)=>{
     return acc
 },[])
 //console.log(result5)
+
+////////////////Flatten a nD array using reduce//////////////////////////
+const arr4 = [[1, 2], [3, 4,[7,8,[12,9]]], [5, 6]];
+const flatArr = arr4.flat();
+
+const flatternArray = (arr) =>{
+    return arr.reduce((acc,item)=>{
+        return acc.concat(
+            Array.isArray(item)? flatternArray(item): item 
+        )
+    },[])
+}
+
+console.log(flatternArray(arr4))
