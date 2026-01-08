@@ -24,4 +24,10 @@ const result2 = arr2.reduce((acc, item)=>{
     acc[item] = (acc[item] || 0) + 1;
     return acc
 },{})
-console.log(result2)
+//console.log(result2)
+/////////////////////////////Count total elements in an array without using .length./////////////////////////////////////////
+const arr3 = [5,4,3,2,1];
+const result3 = arr3.reduce((count)=>{
+    return count + 1
+},0)
+//console.log(result3)
