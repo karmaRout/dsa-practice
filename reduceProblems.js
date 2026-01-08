@@ -40,3 +40,15 @@ const result4 = tempArr.reduce((acc,item)=>{
     return acc
 },{})
 //console.log(result4)
+
+//////////////////////Remove duplicate values from an array using reduce./////////////////////////
+const str1 = "aammmmrrka";
+const tempArr1 = str1.split('')
+
+const result5 = tempArr1.reduce((acc,char)=>{
+    if(!acc.includes(char)){
+        acc.push(char)
+    }
+    return acc
+},[])
+//console.log(result5)
