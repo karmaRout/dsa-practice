@@ -57,12 +57,20 @@ for(let char of str1){
 }
 
 const result1 = Object.entries(obj).reduce((acc,item)=>{
-    console.log(acc[0],"++",item[1])
+    //console.log(acc[0],"++",item[1])
     return item[1] > acc[1] ? item : acc;
 })
 
 //console.log(result1)
-
+//////////////////Print characters in the order they appear (no duplicates).//////////////////////////////////
+const str2 = "Hello imprintnext";
+const newArr = [];
+for(let char of str2){
+    if(!newArr.includes(char)){
+        newArr.push(char)
+    }
+}
+console.log(newArr.join(''))
 
 
 
