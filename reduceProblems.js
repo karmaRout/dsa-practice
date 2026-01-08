@@ -77,4 +77,16 @@ const cart = [
 const totalPrice = cart.reduce((acc, item)=>{
     return acc + item.price
 },0)
-console.log(totalPrice);
+//console.log(totalPrice);
+
+//////////////////Find the most frequent element in an array.//////////////////
+
+const tempArr3 = [7,6,5,1,6,7,6,8];
+const result6 = tempArr3.reduce((acc,item)=>{
+    acc[item] = (acc[item] || 0) + 1
+    return acc
+},{})
+const result7 = Object.entries(result6).reduce((acc,item)=>{
+    return acc[1] > item[1] ? acc : item
+}); 
+console.log(result7);
