@@ -31,3 +31,12 @@ const result3 = arr3.reduce((count)=>{
     return count + 1
 },0)
 //console.log(result3)
+
+////////////////////////Count occurrences of each character in a string using reduce.////////////////////
+const str = "aammmmrrka";
+const tempArr = str.split('')
+const result4 = tempArr.reduce((acc,item)=>{
+    acc[item] = (acc[item] || 0) + 1
+    return acc
+},{})
+//console.log(result4)
