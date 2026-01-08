@@ -63,14 +63,26 @@ const result1 = Object.entries(obj).reduce((acc,item)=>{
 
 //console.log(result1)
 //////////////////Print characters in the order they appear (no duplicates).//////////////////////////////////
-const str2 = "Hello imprintnext";
+const str2 = "Hello Imprintnext";
 const newArr = [];
 for(let char of str2){
     if(!newArr.includes(char)){
         newArr.push(char)
     }
 }
-console.log(newArr.join(''))
+//console.log(newArr.join(''))
+////////////////////Count uppercase and lowercase letters separately.///////////////////////////////////
+let countUpperCae = 0;
+let countLowerCase = 0;
+for(let char of str2){
+    if(char >= 'A' && char <= 'Z'){
+        countUpperCae++;
+    }
+    else if(char >= 'a' && char <= 'z'){
+        countLowerCase++
+    }
+}
+//console.log("UPPER :-",countUpperCae,'||||','LOWER :-', countLowerCase)
 
 
 
