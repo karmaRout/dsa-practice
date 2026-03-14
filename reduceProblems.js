@@ -89,4 +89,13 @@ const result6 = tempArr3.reduce((acc,item)=>{
 const result7 = Object.entries(result6).reduce((acc,item)=>{
     return acc[1] > item[1] ? acc : item
 }); 
-console.log(result7);
+//console.log(result7);
+
+///////////////////Count number of words in a sentence using reduce./////////////////////////
+const str7 = "Hello Imprintnext welcome to 2026";
+const arrVal = str7.split(' '); 
+
+// const result8 = arrVal.reduce((acc,item)=>{
+//     return acc = acc + 1;
+// },0)
+console.log(arrVal.length)
