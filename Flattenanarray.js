@@ -1,0 +1,10 @@
+//Flatten an array
+//let arr = [[1,2],[3,4],[5,6]];
+//Expected
+//[1,2,3,4,5,6]
+
+let arr = [[1,2],[3,4],[5,6]];
+const result = arr.reduce((acc, item) =>{
+    return acc.concat(item);
+},[])
+console.log(result)
